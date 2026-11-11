@@ -104,8 +104,8 @@ def fig_results():
         e = [100 * s["configs"][f"{x}|{pol}|fixed"]["on_time_10"]["ci95"] for x in sc]
         xs = [i + (j - 0.5) * w for i in range(len(sc))]
         ax.bar(xs, m, w, yerr=e, color=col, label=lab, capsize=3)
-        for x, v in zip(xs, m):
-            ax.text(x, v + 1.2, f"{v:.1f}", ha="center", fontsize=8)
+        for x, v, err in zip(xs, m, e):
+            ax.text(x, v + err + 1.5, f"{v:.1f}", ha="center", fontsize=8)
     ax.set_xticks(range(len(sc))); ax.set_xticklabels(labels)
     ax.set_ylabel("Orders delivered within 10 min (%)"); ax.set_ylim(0, 100)
     ax.legend(fontsize=8, frameon=False, loc="upper right")
