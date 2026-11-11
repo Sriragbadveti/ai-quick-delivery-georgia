@@ -1,0 +1,149 @@
+{
+  "city": "Tbilisi",
+  "h3Resolution": 9,
+  "zoneRidingMinutes": 7,
+  "searchRings": 14,
+  "bbox": {
+    "south": 41.64,
+    "west": 44.7,
+    "north": 41.82,
+    "east": 44.92
+  },
+  "populationTotal2026": 1369400,
+  "populationSource": "District shares from the 2014 census (Geostat via citypopulation.de), scaled to the 1 January 2026 total (Geostat, 2026)",
+  "stores": [
+    {
+      "id": "saburtalo",
+      "name": "Saburtalo",
+      "lat": 41.7275,
+      "lng": 44.756
+    },
+    {
+      "id": "vake",
+      "name": "Vake",
+      "lat": 41.708,
+      "lng": 44.748
+    },
+    {
+      "id": "isani",
+      "name": "Isani",
+      "lat": 41.6905,
+      "lng": 44.838
+    }
+  ],
+  "districts": [
+    {
+      "name": "Chughureti",
+      "lat": 41.718,
+      "lng": 44.802,
+      "population2014": 65230
+    },
+    {
+      "name": "Didube",
+      "lat": 41.746,
+      "lng": 44.777,
+      "population2014": 70018
+    },
+    {
+      "name": "Gldani",
+      "lat": 41.795,
+      "lng": 44.82,
+      "population2014": 177214
+    },
+    {
+      "name": "Isani",
+      "lat": 41.692,
+      "lng": 44.838,
+      "population2014": 125610
+    },
+    {
+      "name": "Krtsanisi",
+      "lat": 41.665,
+      "lng": 44.825,
+      "population2014": 39286
+    },
+    {
+      "name": "Mtatsminda",
+      "lat": 41.693,
+      "lng": 44.788,
+      "population2014": 49052
+    },
+    {
+      "name": "Nadzaladevi",
+      "lat": 41.762,
+      "lng": 44.792,
+      "population2014": 154067
+    },
+    {
+      "name": "Saburtalo",
+      "lat": 41.733,
+      "lng": 44.755,
+      "population2014": 138493
+    },
+    {
+      "name": "Samgori",
+      "lat": 41.697,
+      "lng": 44.872,
+      "population2014": 177844
+    },
+    {
+      "name": "Vake",
+      "lat": 41.709,
+      "lng": 44.745,
+      "population2014": 111903
+    }
+  ],
+  "stadium": {
+    "name": "Boris Paichadze Dinamo Arena",
+    "lat": 41.7232,
+    "lng": 44.7897,
+    "capacity": 54549
+  },
+  "timeBands": {
+    "morning": {
+      "hours": [
+        8,
+        12
+      ],
+      "speedKmh": 17
+    },
+    "midday": {
+      "hours": [
+        12,
+        17
+      ],
+      "speedKmh": 16
+    },
+    "evening_peak": {
+      "hours": [
+        17,
+        21
+      ],
+      "speedKmh": 13
+    },
+    "night": {
+      "hours": [
+        21,
+        24
+      ],
+      "speedKmh": 18
+    }
+  },
+  "weekendSpeedKmh": 17,
+  "operatingHours": [
+    8,
+    24
+  ],
+  "approxTravel": {
+    "circuityFactor": 1.38,
+    "fixedMinutes": 0.4
+  },
+  "congestion": {
+    "morning": 1.1,
+    "midday": 1.05,
+    "evening_peak": 1.3,
+    "night": 0.95,
+    "weekend": 1.05
+  },
+  "congestionNote": "Multipliers on free-flow road-network riding times per time band (assumed until traffic-aware times from the Google Routes API are added)"
+}

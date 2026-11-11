@@ -1,0 +1,33 @@
+{
+  "name": "ai-quick-delivery-georgia",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-powered quick (10-minute) grocery delivery system for Tbilisi, Georgia — bachelor's project prototype",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "zones": "tsx packages/geo/src/buildZones.ts",
+    "demand": "tsx packages/demand/src/generate.ts",
+    "forecast": "tsx packages/demand/src/forecast.ts",
+    "promise:serve": "tsx packages/promise/src/server.ts",
+    "allocation:serve": "tsx packages/allocation/src/server.ts",
+    "test": "tsx --test packages/*/src/*.test.ts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/geojson": "^7946.0.16",
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
+    "@turf/turf": "^7.4.0",
+    "express": "^5.3.0",
+    "h3-js": "^4.5.0"
+  }
+}

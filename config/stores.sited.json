@@ -1,0 +1,48 @@
+{
+  "method": "greedy maximum coverage, midday 7-min riding zone, OSM road network",
+  "stores": [
+    {
+      "id": "isani",
+      "name": "Isani",
+      "lat": 41.69294,
+      "lng": 44.84326
+    },
+    {
+      "id": "saburtalo",
+      "name": "Saburtalo",
+      "lat": 41.72413,
+      "lng": 44.74991
+    },
+    {
+      "id": "vake",
+      "name": "Vake",
+      "lat": 41.70743,
+      "lng": 44.73426
+    }
+  ],
+  "report": [
+    {
+      "store": "isani",
+      "candidates": 120,
+      "initialResidents": 98947,
+      "sitedNewResidents": 125273,
+      "sitedCells": 112
+    },
+    {
+      "store": "saburtalo",
+      "candidates": 115,
+      "initialResidents": 45534,
+      "sitedNewResidents": 105603,
+      "sitedCells": 110
+    },
+    {
+      "store": "vake",
+      "candidates": 144,
+      "initialResidents": 19846,
+      "sitedNewResidents": 31187,
+      "sitedCells": 76
+    }
+  ],
+  "coveredResidents": 262062,
+  "initialGuessResidentsSum": 164327
+}

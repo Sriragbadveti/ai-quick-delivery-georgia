@@ -1,0 +1,37 @@
+{
+  "weatherSource": "open-meteo csv",
+  "trainRows": 960512,
+  "testRows": 360192,
+  "features": 31,
+  "epochs": 10,
+  "trainSeconds": 216,
+  "finalLoss": 0.31458988881060307,
+  "cellSlot": {
+    "all": {
+      "model": 1.7541267958002773,
+      "naive": 1.778976264418811
+    },
+    "matchDays": {
+      "model": 1.7008934405321119,
+      "naive": 1.6862637362637363
+    },
+    "holidays": {
+      "model": 1.7125275113427967,
+      "naive": 1.7263824884792627
+    }
+  },
+  "storeHour": {
+    "all": {
+      "model": 0.1641111941151575,
+      "naive": 0.21675354924578527
+    },
+    "matchDays": {
+      "model": 0.18937109904267277,
+      "naive": 0.21593406593406594
+    },
+    "normalDays": {
+      "model": 0.15867169903403244,
+      "naive": 0.21806569343065693
+    }
+  }
+}

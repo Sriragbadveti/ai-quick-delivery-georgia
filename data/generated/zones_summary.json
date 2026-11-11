@@ -1,0 +1,110 @@
+{
+  "provider": "osm-road-network",
+  "summary": [
+    {
+      "store": "isani",
+      "band": "morning",
+      "cells": 95,
+      "residents": 107883,
+      "areaKm2": 10.09
+    },
+    {
+      "store": "saburtalo",
+      "band": "morning",
+      "cells": 95,
+      "residents": 93172,
+      "areaKm2": 10.08
+    },
+    {
+      "store": "vake",
+      "band": "morning",
+      "cells": 70,
+      "residents": 48677,
+      "areaKm2": 7.43
+    },
+    {
+      "store": "isani",
+      "band": "midday",
+      "cells": 112,
+      "residents": 125273,
+      "areaKm2": 11.9
+    },
+    {
+      "store": "saburtalo",
+      "band": "midday",
+      "cells": 110,
+      "residents": 105603,
+      "areaKm2": 11.68
+    },
+    {
+      "store": "vake",
+      "band": "midday",
+      "cells": 78,
+      "residents": 54826,
+      "areaKm2": 8.28
+    },
+    {
+      "store": "isani",
+      "band": "evening_peak",
+      "cells": 67,
+      "residents": 77979,
+      "areaKm2": 7.12
+    },
+    {
+      "store": "saburtalo",
+      "band": "evening_peak",
+      "cells": 70,
+      "residents": 71455,
+      "areaKm2": 7.43
+    },
+    {
+      "store": "vake",
+      "band": "evening_peak",
+      "cells": 46,
+      "residents": 32604,
+      "areaKm2": 4.88
+    },
+    {
+      "store": "isani",
+      "band": "night",
+      "cells": 133,
+      "residents": 147473,
+      "areaKm2": 14.13
+    },
+    {
+      "store": "saburtalo",
+      "band": "night",
+      "cells": 132,
+      "residents": 124432,
+      "areaKm2": 14.01
+    },
+    {
+      "store": "vake",
+      "band": "night",
+      "cells": 96,
+      "residents": 69501,
+      "areaKm2": 10.19
+    },
+    {
+      "store": "isani",
+      "band": "weekend",
+      "cells": 112,
+      "residents": 125273,
+      "areaKm2": 11.9
+    },
+    {
+      "store": "saburtalo",
+      "band": "weekend",
+      "cells": 110,
+      "residents": 105603,
+      "areaKm2": 11.68
+    },
+    {
+      "store": "vake",
+      "band": "weekend",
+      "cells": 78,
+      "residents": 54826,
+      "areaKm2": 8.28
+    }
+  ]
+}
