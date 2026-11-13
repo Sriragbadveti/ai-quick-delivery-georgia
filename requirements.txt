@@ -1,0 +1,13 @@
+# Python components: OR-Tools solver service, SimPy simulator, figures and tests
+ortools>=9.10
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.6
+simpy>=4.1
+requests>=2.31
+numpy>=1.26
+matplotlib>=3.8
+h3>=4.0
+pytest>=8.0
+# only needed to regenerate the road extract from the Geofabrik file:
+# osmium>=3.7

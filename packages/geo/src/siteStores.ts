@@ -4,7 +4,7 @@
  * candidate whose 7-minute riding zone (midday band, OSM road network) adds the most residents not already
  * covered by previously placed stores. Writes config/stores.sited.json.
  */
-import { writeFileSync } from "node:fs";
+import { writeFileSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { cellToLatLng } from "h3-js";
 import { city, ROOT, haversineKm } from "./config.ts";
@@ -27,7 +27,9 @@ async function main() {
     return { res: Math.round(res), cells, set };
   };
   const districtOf = (lat: number, lng: number) => { let b = "", bd = Infinity; for (const d of city.districts) { const x = haversineKm({ lat, lng }, d); if (x < bd) { bd = x; b = d.name; } } return b; };
-  const initial = Object.fromEntries(city.stores.map((s) => [s.id, coverage(s.lat, s.lng)]));
+  // compare with the hand-picked locations of the concept stage (config/city.json), not with earlier sited ones
+  const initialStores = JSON.parse(readFileSync(resolve(ROOT, "config/city.json"), "utf8")).stores as typeof city.stores;
+  const initial = Object.fromEntries(initialStores.map((s) => [s.id, coverage(s.lat, s.lng)]));
   const stores = [], report = [];
   for (const name of TARGETS) {
     const dc = city.districts.find((d) => d.name === name)!;
